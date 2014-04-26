@@ -3,7 +3,7 @@ class location(object):
 	location class
 	Attributes:
 	building - letters
-	roomNumber - digits
+	roomNumber - e.g. G### or ###
 
 	print strings
 	"""

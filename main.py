@@ -17,7 +17,6 @@ i = 1
 courseDict = {}
 while True:
 	print("---course #" + str(i) + "---")
-	i += 1
 
 	while True:
 		CRN = input("CRN: ")
@@ -131,8 +130,9 @@ while True:
 	isCompleted = {"T":True,"F":False}[isCompleted]
 
 	locationObj = location(building,roomNumber)
-	courseObj = course(CRN, subj, courseNumber, title, location, credits, attributes, grades, days, isExist, isCompleted)
+	courseObj = course(CRN, subj, courseNumber, title, locationObj, credits, attributes, grades, days, isExist, isCompleted)
 	courseDict[courseObj.getCRN()] = courseObj
+	print(courseDict[courseObj.getCRN()])
 
 	del courseObj
 	del locationObj
@@ -144,5 +144,6 @@ while True:
 	if not {"T":True,"F":False}[answer]:
 		print(str(i) + " course(s) added.")
 		break
+	i += 1
 
 print (courseDict)

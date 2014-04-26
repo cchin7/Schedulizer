@@ -106,6 +106,7 @@ def validateIsExist(isExist):
 def validateIsCompleted(isCompleted):
 	return isinstance(isCompleted,bool)
 
+'''
 def validateAll(inputList):
 	inputTuple = tuple(inputList)
 
@@ -170,3 +171,4 @@ def validateAll(inputList):
 		return False
 
 	return True
+'''

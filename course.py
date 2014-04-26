@@ -54,6 +54,9 @@ class course(object):
     return self.__isExist
   def getIsCompleted(self):
     return self.__isCompleted
+  def __str__(self):
+    return '\n' + self.__subj + " " + str(self.__courseNumber) + "\t" + self.__title + '\n' + "Days: " +'\t\t' + str(self.__days) + '\n' + "Location:" + '\t' + str(self.__location) + '\n' + "Credits: " + '\t' + str(self.__credits) + '\n' + "Attributes: " + '\t' + str(self.__attributes) + '\n' + "Grades: " + '\t' + self.__grades + '\n' + "isExist: " + '\t' + str(self.__isExist) + '\n' + 'isCompleted:' + '\t' + str(self.__isCompleted) + '\n'
+
 #-------------------------------------------------------------------
   #Mutator
   def setCRN(self,CRN):
